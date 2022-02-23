@@ -1,6 +1,5 @@
 from unittest import skip
 
-
 i = 0
 
 def inputscript():
@@ -56,7 +55,6 @@ def actionscript():
                     inputscript()
                     actionscript()
     
-
 def clearscript():
     global currentnum
     file1.truncate(0)
