@@ -29,14 +29,14 @@ def actionscript():
     global file1
     action = input("Action (+, -, *, /, clear, end): ")
     try:
-        actionnumber = float(action)
+        action = float(action)
     except ValueError:
         if action == "clear":
             skip
         elif action == "end":
             skip
         else:
-            tempinput2 = input("Number: ")
+            tempinput2 = input("Input (number, clear, end): ")
             try:
                 num2 = float(tempinput2)
                 file1.write(str(action) + " " + str(num2) + "\n")
